@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัว</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* เพิ่มสีและการจัดวางให้สวยงาม */
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #00cc36;
+        }
+        .navbar a {
+            color: #ffffff !important;
+        }
+        .about-section {
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .skills-section {
+            background-color: #e9ecef;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        .portfolio-item {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #00cc36;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Profile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="https://via.placeholder.com/200" class="img-fluid rounded-circle" alt="Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>สวัสดีค่ะ/ครับ! ฉันคือ [ปริยาภัทร โตเปี่ยม] เป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการสร้างสรรค์ผลงานสวยงามและใช้งานง่าย พร้อมที่จะเรียนรู้และเติบโตในสายงานนี้เสมอ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section container my-5">
+        <h2 class="text-center">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h4>HTML</h4>
+                <p>เชี่ยวชาญในการสร้างโครงสร้างเว็บไซต์</p>
+            </div>
+            <div class="col-md-4">
+                <h4>CSS & Bootstrap</h4>
+                <p>ออกแบบเว็บไซต์ให้สวยงามและตอบสนองทุกหน้าจอ</p>
+            </div>
+            <div class="col-md-4">
+                <h4>JavaScript</h4>
+                <p>เพิ่มความโต้ตอบและฟังก์ชันการทำงานให้เว็บไซต์</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-item p-3 mb-4 bg-white">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Project 1">
+                    <h5 class="mt-3">Project 1</h5>
+                    <p>รายละเอียดโปรเจค 1</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item p-3 mb-4 bg-white">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Project 2">
+                    <h5 class="mt-3">Project 2</h5>
+                    <p>รายละเอียดโปรเจค 2</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-item p-3 mb-4 bg-white">
+                    <img src="https://via.placeholder.com/300x200" class="img-fluid rounded" alt="Project 3">
+                    <h5 class="mt-3">Project 3</h5>
+                    <p>รายละเอียดโปรเจค 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">ชื่อ</label>
+                <input type="text" class="form-control" id="name" placeholder="ชื่อของคุณ">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล</label>
+                <input type="email" class="form-control" id="email" placeholder="example@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">ข้อความ</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="เขียนข้อความของคุณที่นี่..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Profile. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
